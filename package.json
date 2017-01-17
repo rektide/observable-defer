@@ -1,0 +1,19 @@
+{
+	"name": "observable-defer",
+	"version": "1.0.0",
+	"description": "Defer equivalent for observables, powered by Most.js.",
+	"main": "observable-defer.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/observable-defer"
+	},
+	"keywords": ["observable", "defer", "most.js"],
+	"author": "rektide de la faye",
+	"license": "X11",
+	"dependencies": {
+		"most-cree8": "^2.0.1"
+	}
+}
