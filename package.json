@@ -1,6 +1,6 @@
 {
 	"name": "observable-defer",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Defer equivalent for observables, powered by Most.js.",
 	"main": "observable-defer.js",
 	"scripts": {
@@ -14,6 +14,6 @@
 	"author": "rektide de la faye",
 	"license": "X11",
 	"dependencies": {
-		"most-cree8": "^2.0.1"
+		"most-cree8": "^2.1.0"
 	}
 }

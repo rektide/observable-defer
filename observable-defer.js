@@ -23,7 +23,7 @@ function ObservableDefer(){
 		"observed": {
 			enumerable: true,
 			get: function(){
-				return stream.observed
+				return !!stream._sink
 			}
 		}
 	})
