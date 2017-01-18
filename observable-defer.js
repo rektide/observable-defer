@@ -9,9 +9,14 @@ function ObservableDefer(){
 		value.next= next
 		value.complete= complete
 		value.error= error
+		return function(){
+			if( value.ondispose){
+				value.ondispose()
+			}
+		}
 	})
 	Object.defineProperties(value, {
-		"onObserved": {
+		"onobserved": {
 			enumerable: true,
 			get: function(){
 				return stream.onObserved
