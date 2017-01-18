@@ -10,22 +10,22 @@ function ObservableDefer(){
 		value.complete= complete
 		value.error= error
 		return function(){
-			if( value.ondispose){
-				value.ondispose()
+			if( value.onunsubscribe){
+				value.onunsubscribe()
 			}
 		}
 	})
 	Object.defineProperties(value, {
-		"onobserved": {
+		"onsubscribe": {
 			enumerable: true,
 			get: function(){
-				return stream.onObserved
+				return stream.onsubscribe
 			},
 			set: function( value){
-				stream.onObserved= value
+				stream.onsubscribe= value
 			}
 		},
-		"observed": {
+		"subscribed": {
 			enumerable: true,
 			get: function(){
 				return !!stream._sink
