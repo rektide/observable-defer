@@ -12,7 +12,7 @@ function ObservableDefer(){
 	})
 	Object.defineProperties(value, {
 		"onObserved": {
-			enumerable, true,
+			enumerable: true,
 			get: function(){
 				return stream.onObserved
 			},

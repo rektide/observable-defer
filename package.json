@@ -1,6 +1,6 @@
 {
 	"name": "observable-defer",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Defer equivalent for observables, powered by Most.js.",
 	"main": "observable-defer.js",
 	"scripts": {
